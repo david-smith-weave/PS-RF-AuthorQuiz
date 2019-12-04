@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import './bootstrap.min.css';
 
-function App() {
+function AuthorQuiz() {
   return (
     <div className="App">
       <header className="App-header">
@@ -24,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+export default AuthorQuiz;
