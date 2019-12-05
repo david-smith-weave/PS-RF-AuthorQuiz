@@ -56,6 +56,7 @@ function getTurnData(authors){
     }, []);
 
     const fourRandomBooks = shuffle(allBooks).slice(0,4);
+    const answer = sample(fourRandomBooks);
 }
 
 const state = {
