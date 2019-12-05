@@ -34,6 +34,12 @@ const authors = [
         imageSource: 'Wikimedia Commons',
         imageAttribution: 'Pinguino',
         books: ['The Shining', 'IT']
+    },
+    {
+        name: 'Charles Dickens',
+        imageUrl: 'images/authors/charlesdickens.jpg',
+        imageSource: 'Wikimedia Commons',
+        books: ['David Copperfield', 'A Tale of Two Cities']
     }
 ];
 
