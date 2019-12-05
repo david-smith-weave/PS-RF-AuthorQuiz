@@ -22,7 +22,7 @@ function Book({title, onClick}){
   )
 }
 
-function Turn({author, books, highlight}){
+function Turn({author, books, highlight, onAnswerSelected}){
 
   function highlightToBgColor(highlight){
     const mapping = {
@@ -40,7 +40,7 @@ function Turn({author, books, highlight}){
         <img src={author.imageUrl} className="authorimage" alt="Author"/>
       </div>
       <div className="col-6">
-        {books.map((title) => <Book title={title} key={title} />)}
+        {books.map((title) => <Book title={title} key={title} onClick={onAnswerSelected} />)}
       </div>
     </div>
   );
