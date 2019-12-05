@@ -38,7 +38,13 @@ describe("Author Quiz", () => {
   });
 
   describe("When the wrong answer has been selected", () => {
+    let wrapper;
 
+    beforeAll(() => {
+      wrapper = mount(
+        <AuthorQuiz {...Adapter(Object.assign({}, state, {highlight: 'wrong'}))} onAnswerSelected={() => {}} />
+      );
+    });
   });
 });
 
