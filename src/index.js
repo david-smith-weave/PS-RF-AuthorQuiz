@@ -57,6 +57,13 @@ function getTurnData(authors){
 
     const fourRandomBooks = shuffle(allBooks).slice(0,4);
     const answer = sample(fourRandomBooks);
+
+    return{
+        books: fourRandomBooks,
+        author: authors.find((author) =>
+            author.books.some((title) =>
+                title === answer))
+    }
 }
 
 const state = {
