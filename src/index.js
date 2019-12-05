@@ -13,6 +13,11 @@ const authors = [
     }
 ];
 
+const state = {
+    author: authors[0],
+    books: authors[0].books
+}
+
 ReactDOM.render(<AuthorQuiz />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
