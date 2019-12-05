@@ -25,5 +25,12 @@ describe("Author Quiz", () => {
     ReactDOM.render(<AuthorQuiz {...state} onAnswerSelected={() => {}} />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
+
+  describe("When no answer has been selected", ()=>{
+    let wrapper;
+    beforeAll(()=>{
+      wrapper = mount(<AuthorQuiz {...state} onAnswerSelected={() => {}} />)
+    });
+  });
 });
 
