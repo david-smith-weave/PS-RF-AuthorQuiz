@@ -30,6 +30,8 @@ function Turn({author, books, highlight}){
       'correct': 'green',
       'wrong': 'red'
     };
+
+    return mapping[highlight];
   }
 
   return(
