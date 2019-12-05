@@ -71,9 +71,13 @@ describe("Author Quiz", () => {
     
     beforeAll(() => {
       wrapper = mount(
-        <AuthorQuiz {...state} onAnswerSelected={() => {handleAnswerSelected}} />
+        <AuthorQuiz {...state} onAnswerSelected={handleAnswerSelected} />
       );
       wrapper.find('.answer').first().simulate('click');
+    });
+
+    it("onAnswerSelected should be called", ()=>{
+      expect(handleAnswerSelected).toHaveBeenCalled();
     });
 
   });
