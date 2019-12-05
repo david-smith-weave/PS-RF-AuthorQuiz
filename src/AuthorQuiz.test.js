@@ -79,6 +79,10 @@ describe("Author Quiz", () => {
     it("onAnswerSelected should be called", ()=>{
       expect(handleAnswerSelected).toHaveBeenCalled();
     });
+    
+    it("should recieve The Shining", () => {
+      expect(handleAnswerSelected).toHaveBeenCalledWith("The Shining");
+    });
 
   });
 
