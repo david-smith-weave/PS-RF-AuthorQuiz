@@ -45,6 +45,10 @@ describe("Author Quiz", () => {
         <AuthorQuiz {...Adapter(Object.assign({}, state, {highlight: 'wrong'}))} onAnswerSelected={() => {}} />
       );
     });
+
+    it("should have a red background color", () => {
+      expect(wrapper.find('div.row.turn').props().style.backgroundColor).toBe('red');
+    });
   });
 });
 
