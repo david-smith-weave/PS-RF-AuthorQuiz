@@ -5,8 +5,8 @@ import './bootstrap.min.css';
 
 function AuthorQuiz() {
   return (
-    <div>
-      Author Quiz
+    <div className="container-fluid">
+      
     </div>
   );
 }
