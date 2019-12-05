@@ -73,6 +73,7 @@ const state = {
 
 function onAnswerSelected(answer){
     const isCorrect = state.turnData.author.books.some((book) => book === answer);
+    state.highlight = isCorrect ? 'correct' : 'wrong';
 }
 
 ReactDOM.render(<AuthorQuiz {...state} onAnswerSelected={onAnswerSelected} />, document.getElementById('root'));
