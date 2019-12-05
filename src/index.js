@@ -20,6 +20,13 @@ const authors = [
         imageUrl: 'images/authors/joshephconrad.png',
         imageSource: 'Wikimedia Commons',
         books: ['Heart of Darkness']
+    },
+    {
+        name: 'J.K. Rowling',
+        imageUrl: 'images/authors/jkrowling.jpg',
+        imageSource: 'Wikimedia Commons',
+        imageAttribution: 'Daniel Ogren',
+        books: ['Harry Potter and the Philosophers Stone']
     }
 ];
 
