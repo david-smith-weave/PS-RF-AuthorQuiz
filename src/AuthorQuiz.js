@@ -26,12 +26,21 @@ function Continue(){
   );
 }
 
+function Footer(){
+  return(
+    <div id="footer" className="row">
+      
+    </div>
+  )
+}
+
 function AuthorQuiz() {
   return (
     <div className="container-fluid">
       <Hero />
       <Turn />
       <Continue />
+      <Footer />
     </div>
   );
 }
