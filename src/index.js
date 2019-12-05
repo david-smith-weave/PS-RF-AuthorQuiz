@@ -4,6 +4,8 @@ import './index.css';
 import AuthorQuiz from './AuthorQuiz';
 import * as serviceWorker from './serviceWorker';
 
+const authors = [];
+
 ReactDOM.render(<AuthorQuiz />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
