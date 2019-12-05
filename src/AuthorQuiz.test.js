@@ -67,6 +67,15 @@ describe("Author Quiz", () => {
 
   describe("When the first answer is selected", () =>{
     let wrapper;
+    const handleAnswerSelected = jest.fn();
+    
+    beforeAll(() => {
+      wrapper = mount(
+        <AuthorQuiz {...state} onAnswerSelected={() => {handleAnswerSelected}} />
+      );
+      wrapper.find('.answer').first().simulate('click');
+    });
+
   });
 
 });
