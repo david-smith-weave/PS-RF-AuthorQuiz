@@ -4,7 +4,14 @@ import './index.css';
 import AuthorQuiz from './AuthorQuiz';
 import * as serviceWorker from './serviceWorker';
 
-const authors = [];
+const authors = [
+    {
+        name: 'Mark Twain',
+        imageUrl: 'images/authors/marktwain.jpg',
+        imageSource: 'Wikimedia Commons',
+        books: ['The Adventures of Huckleberry Finn']
+    }
+];
 
 ReactDOM.render(<AuthorQuiz />, document.getElementById('root'));
 
