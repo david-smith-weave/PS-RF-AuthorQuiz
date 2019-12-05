@@ -23,6 +23,11 @@ function Book({title}){
 }
 
 function Turn({author, books, highlight}){
+
+  function highlightToBgColor(){
+    
+  }
+
   return(
     <div className="row turn" style={{backgroundColor: "white"}}>
       <div className="col-4 offset-1">
