@@ -14,6 +14,12 @@ const authors = [
             'Life on the Mississippi',
             'Roughing It'
         ]
+    },
+    {
+        name: 'Joseph Conrad',
+        imageUrl: 'images/authors/joshephconrad.png',
+        imageSource: 'Wikimedia Commons',
+        books: ['Heart of Darkness']
     }
 ];
 
