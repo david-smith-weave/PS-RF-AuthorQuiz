@@ -65,5 +65,9 @@ describe("Author Quiz", () => {
     });
   });
 
+  describe("When the first answer is selected", () =>{
+    let wrapper;
+  });
+
 });
 
