@@ -54,6 +54,8 @@ function getTurnData(authors){
     const allBooks = authors.reduce(function (p, c, i){
         return p.concat(c.books);
     }, []);
+
+    const fourRandomBooks = shuffle(allBooks).slice(0,4);
 }
 
 const state = {
