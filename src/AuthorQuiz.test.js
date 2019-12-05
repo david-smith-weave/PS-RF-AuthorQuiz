@@ -31,6 +31,10 @@ describe("Author Quiz", () => {
     beforeAll(()=>{
       wrapper = mount(<AuthorQuiz {...state} onAnswerSelected={() => {}} />)
     });
+
+    it("should have no background color", () => {
+      expect(wrapper.find("div.row.turn").props().style.backgroundColor).toBe('');
+    });
   });
 });
 
