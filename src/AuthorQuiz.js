@@ -14,9 +14,9 @@ function Hero(){
   );
 }
 
-function Book({title}){
+function Book({title, onClick}){
   return(
-    <div className="answer">
+    <div className="answer" onClick={() => {onClick(title);}}>
       <h4>{title}</h4>
     </div>
   )
