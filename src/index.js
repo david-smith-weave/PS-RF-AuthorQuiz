@@ -18,7 +18,7 @@ const authors = [
     },
     {
         name: 'Joseph Conrad',
-        imageUrl: 'images/authors/joshephconrad.png',
+        imageUrl: 'images/authors/josephconrad.png',
         imageSource: 'Wikimedia Commons',
         books: ['Heart of Darkness']
     },
