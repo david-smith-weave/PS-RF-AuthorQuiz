@@ -5,7 +5,11 @@ import './bootstrap.min.css';
 
 function Hero(){
   return(
-    <div></div>
+    <div className="row">
+      <div className="jumbotron col-10 offset-1">
+        
+      </div>
+    </div>
   );
 }
 
