@@ -50,7 +50,9 @@ const authors = [
 ];
 
 function getTurnData(authors){
-    
+    const allBooks = authors.reduce(function (p, c, i){
+        return p.concat(c.books);
+    }, []);
 }
 
 const state = {
