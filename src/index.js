@@ -27,6 +27,13 @@ const authors = [
         imageSource: 'Wikimedia Commons',
         imageAttribution: 'Daniel Ogren',
         books: ['Harry Potter and the Philosophers Stone']
+    },
+    {
+        name: 'Stephen King',
+        imageUrl: 'images/authors/stephenking.jpg',
+        imageSource: 'Wikimedia Commons',
+        imageAttribution: 'Pinguino',
+        books: ['The Shining', 'IT']
     }
 ];
 
