@@ -36,5 +36,9 @@ describe("Author Quiz", () => {
       expect(wrapper.find("div.row.turn").props().style.backgroundColor).toBe('');
     });
   });
+
+  describe("When the wrong answer has been selected", () => {
+
+  });
 });
 
