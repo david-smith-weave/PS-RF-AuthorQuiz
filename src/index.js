@@ -71,7 +71,11 @@ const state = {
     highlight: ''
 }
 
-ReactDOM.render(<AuthorQuiz {...state} />, document.getElementById('root'));
+function onAnswerSelected(){
+    
+}
+
+ReactDOM.render(<AuthorQuiz {...state} onAnswerSelected={onAnswerSelected} />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
