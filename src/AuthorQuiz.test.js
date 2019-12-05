@@ -22,7 +22,7 @@ const state = {
 describe("Author Quiz", () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<AuthorQuiz {...state} />, div);
+    ReactDOM.render(<AuthorQuiz {...state} onAnswerSelected={() => {}} />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 });
