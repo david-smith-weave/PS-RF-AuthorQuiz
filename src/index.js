@@ -14,8 +14,10 @@ const authors = [
 ];
 
 const state = {
-    author: authors[0],
-    books: authors[0].books
+    turnData:{
+        author: authors[0],
+        books: authors[0].books
+    }
 }
 
 ReactDOM.render(<AuthorQuiz />, document.getElementById('root'));
