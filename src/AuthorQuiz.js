@@ -24,8 +24,12 @@ function Book({title}){
 
 function Turn({author, books, highlight}){
 
-  function highlightToBgColor(){
-    
+  function highlightToBgColor(highlight){
+    const mapping = {
+      'none': '',
+      'correct': 'green',
+      'wrong': 'red'
+    };
   }
 
   return(
