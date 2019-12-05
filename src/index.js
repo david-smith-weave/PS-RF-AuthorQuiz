@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import AuthorQuiz from './AuthorQuiz';
 import * as serviceWorker from './serviceWorker';
-import {shuffle} from 'underscore';
+import {shuffle, sample} from 'underscore';
 
 const authors = [
     {
