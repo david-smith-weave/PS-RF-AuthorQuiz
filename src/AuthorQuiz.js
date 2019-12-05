@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './bootstrap.min.css';
-import {PropTypes} from 'airbnb-prop-types';
+import {PropTypes} from 'proptypes';
 
 function Hero(){
   return(
