@@ -22,7 +22,7 @@ function Book({title}){
   )
 }
 
-function Turn({author, books}){
+function Turn({author, books, highlight}){
   return(
     <div className="row turn" style={{backgroundColor: "white"}}>
       <div className="col-4 offset-1">
