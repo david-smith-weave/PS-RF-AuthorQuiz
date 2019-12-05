@@ -42,7 +42,7 @@ describe("Author Quiz", () => {
 
     beforeAll(() => {
       wrapper = mount(
-        <AuthorQuiz {...Adapter(Object.assign({}, state, {highlight: 'wrong'}))} onAnswerSelected={() => {}} />
+        <AuthorQuiz {...(Object.assign({}, state, {highlight: 'wrong'}))} onAnswerSelected={() => {}} />
       );
     });
 
