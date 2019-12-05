@@ -49,11 +49,12 @@ const authors = [
     }
 ];
 
+function getTurnData(authors){
+    
+}
+
 const state = {
-    turnData:{
-        author: authors[0],
-        books: authors[0].books
-    }
+    turnData: getTurnData(authors)
 }
 
 ReactDOM.render(<AuthorQuiz {...state} />, document.getElementById('root'));
