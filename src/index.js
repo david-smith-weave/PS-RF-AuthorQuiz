@@ -40,6 +40,12 @@ const authors = [
         imageUrl: 'images/authors/charlesdickens.jpg',
         imageSource: 'Wikimedia Commons',
         books: ['David Copperfield', 'A Tale of Two Cities']
+    },
+    {
+        name: 'William Shakespeare',
+        imageUrl: 'images/authors/williamshakespeare.jpg',
+        imageSource: 'Wikimedia Commons',
+        books: ['Hamlet', 'Macbeth', 'Romeo and Juliet']
     }
 ];
 
