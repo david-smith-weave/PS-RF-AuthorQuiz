@@ -16,7 +16,9 @@ function Hero(){
 
 function Turn(){
   return(
-    <div></div>
+    <div className="row turn" style={{backgroundColor: "white"}}>
+
+    </div>
   );
 }
 
