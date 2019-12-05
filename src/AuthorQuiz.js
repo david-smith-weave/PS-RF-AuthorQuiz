@@ -16,7 +16,9 @@ function Hero(){
 
 function Book({title}){
   return(
-    <div></div>
+    <div className="answer">
+      <h4>{title}</h4>
+    </div>
   )
 }
 
