@@ -14,7 +14,7 @@ function Hero(){
   );
 }
 
-function Turn(){
+function Turn({author, books}){
   return(
     <div className="row turn" style={{backgroundColor: "white"}}>
       <div className="col-4 offset-1">
