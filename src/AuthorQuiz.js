@@ -14,6 +14,12 @@ function Hero(){
   );
 }
 
+function Book({title}){
+  return(
+    <div></div>
+  )
+}
+
 function Turn({author, books}){
   return(
     <div className="row turn" style={{backgroundColor: "white"}}>
