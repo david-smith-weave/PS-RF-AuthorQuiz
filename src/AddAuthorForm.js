@@ -31,6 +31,9 @@ class AuthorForm extends React.Component {
                 <label htmlFor="imageUrl">Image URL</label>
                 <input type="text" name="imageUrl" value={this.state.imageUrl} onChange={this.onFieldChange}/>
             </div>
+            <div className="AddAuthorForm__input">
+                {this.state.books.map((book) => <p>{book}</p>)}
+            </div>
             <input type="submit" value="Add" />
         </form>
     }
