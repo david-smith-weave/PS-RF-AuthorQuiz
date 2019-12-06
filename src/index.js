@@ -78,6 +78,10 @@ function onAnswerSelected(answer){
     render();
 }
 
+function App() {
+    
+}
+
 function render(){
     ReactDOM.render(<AuthorQuiz {...state} onAnswerSelected={onAnswerSelected} />, document.getElementById('root'));
 }
