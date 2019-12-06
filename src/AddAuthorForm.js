@@ -9,6 +9,7 @@ class AuthorForm extends React.Component {
             imageUrl: ''
         };
         this.onFieldChange = this.onFieldChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
     handleSubmit(event){
         event.preventDefault();
