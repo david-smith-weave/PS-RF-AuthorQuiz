@@ -83,7 +83,7 @@ function App() {
 }
 
 function render(){
-    ReactDOM.render(<AuthorQuiz {...state} onAnswerSelected={onAnswerSelected} />, document.getElementById('root'));
+    ReactDOM.render(<App />, document.getElementById('root'));
 }
 render();
 // If you want your app to work offline and load faster, you can change
