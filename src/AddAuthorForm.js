@@ -6,7 +6,8 @@ class AuthorForm extends React.Component {
         super(props);
         this.state ={
             name: '',
-            imageUrl: ''
+            imageUrl: '',
+            books: []
         };
         this.onFieldChange = this.onFieldChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
