@@ -78,10 +78,10 @@ function onAnswerSelected(answer){
     render();
 }
 
-function AddAuthorForm(){
+function AddAuthorForm({match}){
     return <div>
         <h1>Add Author</h1>
-        <p></p>
+        <p>{JSON.stringify(match)}</p>
     </div>;
 }
 
