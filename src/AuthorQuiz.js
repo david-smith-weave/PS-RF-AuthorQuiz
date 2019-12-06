@@ -5,6 +5,7 @@ import logo from './logo.svg';
 import './App.css';
 import './bootstrap.min.css';
 import { PropTypes } from 'prop-types';
+import { shallowEqual } from '@babel/types';
 
 function Hero(){
   return(
@@ -61,9 +62,16 @@ Turn.propTypes = {
   highlight: PropTypes.string.isRequired
 };
 
-function Continue(){
+function Continue({show, onContinue}){
   return(
-    <div></div>
+    <div className="row continue">
+      { show
+        ? <div className="col-11">
+            <button className="btn btn-primary btn-lg float-right" />
+          </div>
+        : null }
+      }
+    </div>
   );
 }
 
