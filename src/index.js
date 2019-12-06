@@ -86,6 +86,7 @@ function render(){
     ReactDOM.render(
         <BrowserRouter>
             <Route exact path="/" component={App} />
+            <Route path="/add" component={AddAuthor} />
         </BrowserRouter>, document.getElementById('root')
     );
 }
