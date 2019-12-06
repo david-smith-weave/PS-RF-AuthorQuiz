@@ -85,7 +85,7 @@ function App() {
 function render(){
     ReactDOM.render(
         <BrowerRouter>
-            <Route exact path "/" component={App} />
+            <Route exact path="/" component={App} />
         </BrowerRouter>, document.getElementById('root')
     );
 }
