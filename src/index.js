@@ -86,7 +86,7 @@ function render(){
     ReactDOM.render(
         <BrowserRouter>
             <Route exact path="/" component={App} />
-            <Route path="/add" component={AddAuthor} />
+            <Route path="/add" component={AddAuthorForm} />
         </BrowserRouter>, document.getElementById('root')
     );
 }
