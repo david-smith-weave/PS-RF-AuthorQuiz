@@ -6,3 +6,5 @@ function AddAuthorForm({match}){
         <p>{JSON.stringify(match)}</p>
     </div>;
 }
+
+export default AddAuthorForm;
