@@ -83,7 +83,11 @@ function App() {
 }
 
 function render(){
-    ReactDOM.render(<BrowerRouter><App /></BrowerRouter>, document.getElementById('root'));
+    ReactDOM.render(
+        <BrowerRouter>
+            <Route exact path "/" component={App} />
+        </BrowerRouter>, document.getElementById('root')
+    );
 }
 render();
 // If you want your app to work offline and load faster, you can change
