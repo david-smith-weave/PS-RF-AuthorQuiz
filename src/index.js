@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './index.css';
 import AuthorQuiz from './AuthorQuiz';
 import * as serviceWorker from './serviceWorker';
@@ -85,17 +85,21 @@ function AddAuthorForm({match}){
     </div>;
 }
 
-function App() {
+function App({match}) {
     return ReactDOM.render(<AuthorQuiz {...state} onAnswerSelected={onAnswerSelected} />, document.getElementById('root'));
 }
 
 function render(){
     ReactDOM.render(
         <BrowserRouter>
-            <React.Fragment>
-                <Route exact path="/" component={App} />
-                <Route path="/add" component={AddAuthorForm} />
-            </React.Fragment>
+            <Switch>
+                <Route exact path="/">
+                    <App />
+                </Route>
+                <Route path="/add">
+                    <AddAuthorForm />
+                </Route>
+            </Switch>
         </BrowserRouter>, document.getElementById('root')
     );
 }
