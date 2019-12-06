@@ -10,13 +10,16 @@ class AuthorForm extends React.Component {
         };
         this.onFieldChange = this.onFieldChange.bind(this);
     }
+    handleSubmit(event){
+        event.preventDefault();
+    }
     onFieldChange(event){
         this.setState({
             [event.target.name]: event.target.value
         });
     }
     render() {
-        return <form>
+        return <form onSubmit={this.handleSubmit}>
             <div className="AddAuthorForm__input">
                 <label htmlFor="name">Name</label>
                 <input type="text" name="name" value={this.state.name} onChange={this.onFieldChange}/>
