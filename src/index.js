@@ -68,10 +68,14 @@ function getTurnData(authors){
     }
 }
 
-const state = {
-    turnData: getTurnData(authors),
-    highlight: ''
+function resetState() {
+    return {
+        turnData: getTurnData(authors),
+        highlight: ''
+    };
 }
+
+let state = resetState();
 
 function onAnswerSelected(answer){
     const isCorrect = state.turnData.author.books.some((book) => book === answer);
@@ -79,8 +83,13 @@ function onAnswerSelected(answer){
     render();
 }
 
-function App({match}) {
-    return ReactDOM.render(<AuthorQuiz {...state} onAnswerSelected={onAnswerSelected} />, document.getElementById('root'));
+function App() {
+    return <AuthorQuiz {...state} 
+        onAnswerSelected={onAnswerSelected} 
+        onContinue={() => {
+            state = resetState();
+            render();
+        }}/>;
 }
 
 const AuthorWrapper = withRouter(({history}) =>

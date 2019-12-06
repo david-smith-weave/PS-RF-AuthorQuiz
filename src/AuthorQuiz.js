@@ -85,12 +85,12 @@ function Footer(){
   )
 }
 
-function AuthorQuiz({turnData, highlight, onAnswerSelected}) {
+function AuthorQuiz({turnData, highlight, onAnswerSelected, onContinue}) {
   return (
     <div className="container-fluid">
       <Hero />
       <Turn {...turnData} highlight={highlight} onAnswerSelected={onAnswerSelected}/>
-      <Continue show={highlight === 'correct'} />
+      <Continue show={highlight === 'correct'} onContinue={onContinue}/>
       <BrowserRouter>
         <p><Link to="/add">Add an author</Link></p>
       </BrowserRouter>
