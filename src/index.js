@@ -83,6 +83,10 @@ function App({match}) {
     return ReactDOM.render(<AuthorQuiz {...state} onAnswerSelected={onAnswerSelected} />, document.getElementById('root'));
 }
 
+function AuthorWrapper() {
+    return <AddAuthorForm onAddAuthor={console.log} />
+}
+
 function render(){
     ReactDOM.render(
         <BrowserRouter>
