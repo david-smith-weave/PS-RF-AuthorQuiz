@@ -78,6 +78,13 @@ function onAnswerSelected(answer){
     render();
 }
 
+function AddAuthorForm(){
+    return <div>
+        <h1>Add Author</h1>
+        <p></p>
+    </div>;
+}
+
 function App() {
     return ReactDOM.render(<AuthorQuiz {...state} onAnswerSelected={onAnswerSelected} />, document.getElementById('root'));
 }
