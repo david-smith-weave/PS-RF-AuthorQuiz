@@ -83,11 +83,11 @@ function App({match}) {
     return ReactDOM.render(<AuthorQuiz {...state} onAnswerSelected={onAnswerSelected} />, document.getElementById('root'));
 }
 
-function AuthorWrapper() {
-    return <AddAuthorForm onAddAuthor={(author) => {
+const AuthorWrapper = withRouter(({history}) =>
+    <AddAuthorForm onAddAuthor={(author) => {
         authors.push(author);
     }} />
-}
+);
 
 function render(){
     ReactDOM.render(
