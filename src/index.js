@@ -79,7 +79,7 @@ function onAnswerSelected(answer){
 }
 
 function App() {
-    
+    return ReactDOM.render(<AuthorQuiz {...state} onAnswerSelected={onAnswerSelected} />, document.getElementById('root'));
 }
 
 function render(){
