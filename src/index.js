@@ -92,14 +92,10 @@ function App({match}) {
 function render(){
     ReactDOM.render(
         <BrowserRouter>
-            <Switch>
-                <Route exact path="/">
-                    <App />
-                </Route>
-                <Route path="/add">
-                    <AddAuthorForm />
-                </Route>
-            </Switch>
+            <React.Fragment>
+                <Route exact path="/" component={App} />
+                <Route path="/add" component={AddAuthorForm} />
+            </React.Fragment>
         </BrowserRouter>, document.getElementById('root')
     );
 }
