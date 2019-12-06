@@ -1,10 +1,9 @@
 import React from 'react';
 import "./AddAuthorForm.css";
 
-function AddAuthorForm({match}){
-    return <div className="AddAuthorForm">
-        <h1>Add Author</h1>
-        <form>
+class AuthorForm extends React.Component {
+    render() {
+        return <form>
             <div className="AddAuthorForm__input">
                 <label htmlFor="name">Name</label>
                 <input type="text" name="name" />
@@ -14,6 +13,13 @@ function AddAuthorForm({match}){
                 <input type="text" name="imageURL" />
             </div>
         </form>
+    }
+}
+
+function AddAuthorForm({match}){
+    return <div className="AddAuthorForm">
+        <h1>Add Author</h1>
+        <AuthorForm />
     </div>;
 }
 
