@@ -12,6 +12,7 @@ class AuthorForm extends React.Component {
         };
         this.onFieldChange = this.onFieldChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleAddBook = this.handleAddBook.bind(this);
     }
     handleSubmit(event){
         event.preventDefault();
@@ -21,6 +22,9 @@ class AuthorForm extends React.Component {
         this.setState({
             [event.target.name]: event.target.value
         });
+    }
+    handleAddBook(event){
+
     }
     render() {
         return <form onSubmit={this.handleSubmit}>
