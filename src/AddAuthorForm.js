@@ -1,4 +1,5 @@
 import React from 'react';
+import "./AddAuthorForm.css";
 
 function AddAuthorForm({match}){
     return <div className="AddAuthorForm">
