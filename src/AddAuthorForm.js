@@ -3,7 +3,12 @@ import React from 'react';
 function AddAuthorForm({match}){
     return <div>
         <h1>Add Author</h1>
-        <p>{JSON.stringify(match)}</p>
+        <form>
+            <div>
+                <label htmlFor="name">Name</label>
+                <input type="text" name="name" />
+            </div>
+        </form>
     </div>;
 }
 
