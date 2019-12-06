@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import './bootstrap.min.css';
@@ -82,7 +83,9 @@ function AuthorQuiz({turnData, highlight, onAnswerSelected}) {
       <Hero />
       <Turn {...turnData} highlight={highlight} onAnswerSelected={onAnswerSelected}/>
       <Continue />
-      <p><Link to="/add">Add an author</Link></p>
+      <BrowserRouter>
+        <p><Link to="/add">Add an author</Link></p>
+      </BrowserRouter>
       <Footer />
     </div>
   );
