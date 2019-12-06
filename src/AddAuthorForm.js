@@ -7,7 +7,7 @@ class AuthorForm extends React.Component {
         this.state ={
             name: '',
             imageUrl: '',
-            books: ['a','b'],
+            books: [],
             bookTemp: ''
         };
         this.onFieldChange = this.onFieldChange.bind(this);
@@ -24,7 +24,10 @@ class AuthorForm extends React.Component {
         });
     }
     handleAddBook(event){
-
+        this.setState({
+            books: this.state.books.concat([this.state.bookTemp]),
+            bookTemp: ''
+        });
     }
     render() {
         return <form onSubmit={this.handleSubmit}>
