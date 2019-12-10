@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import "./AddAuthorForm.css";
 
 class AuthorForm extends React.Component {
