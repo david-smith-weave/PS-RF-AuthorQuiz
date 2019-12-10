@@ -97,16 +97,10 @@ function reducer(
 
 let store = Redux.createStore(reducer);
 
-function App() {
-    return  <ReactRedux.Provider store={store}> 
-            <AuthorQuiz />
-        </ReactRedux.Provider>;
-}
-
 ReactDOM.render(
     <BrowserRouter>
         <React.Fragment>
-            <Route exact path="/" component={App} />
+            <Route exact path="/" component={AuthorQuiz} />
             <Route path="/add" component={AddAuthorForm} />
         </React.Fragment>
     </BrowserRouter>, document.getElementById('root')
