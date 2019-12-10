@@ -99,7 +99,7 @@ function mapDispatchToProps(dispath){
       dispath({ type: 'ANSWER_SELECTED', answer})
     },
     onContinue: () => {
-      dispatchEvent({ type: 'CONTINUE' })
+      dispatch({ type: 'CONTINUE' })
     }
   };
 }
