@@ -86,6 +86,14 @@ function Footer(){
   )
 }
 
+function mapStateToProps(state){
+
+}
+
+function mapDispatchToProps(state){
+  
+}
+
 const AuthorQuiz = connect(mapStateToProps, mapDispatchToProps)(function ({turnData, highlight, onAnswerSelected, onContinue}) {
   return (
     <div className="container-fluid">
