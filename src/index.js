@@ -88,6 +88,11 @@ function reducer(
                     state, { 
                         highlight: isCorrect ? 'correct' : 'wrong'
                     });    
+            case 'CONTINUE':
+                return Object.assign({}, state, {
+                   highlight: '',
+                   turnData: getTurnData(state.authors) 
+                });
         }
     return state;
 }
