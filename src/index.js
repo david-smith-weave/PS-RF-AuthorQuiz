@@ -86,6 +86,10 @@ function reducer(
                    highlight: '',
                    turnData: getTurnData(state.authors) 
                 });
+            case 'ADD_AUTHOR':
+                return Object.assign({}, state, {
+                    authors: state.authors.concat([action.author])
+                });
             default: return state;
         }
     return state;
