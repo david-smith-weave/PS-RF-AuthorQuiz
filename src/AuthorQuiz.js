@@ -93,7 +93,7 @@ function mapStateToProps(state){
   };
 }
 
-function mapDispatchToProps(dispath){
+function mapDispatchToProps(dispatch){
   return {
     onAnswerSelected: (answer) => {
       dispatch({ type: 'ANSWER_SELECTED', answer})
