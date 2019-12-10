@@ -90,12 +90,14 @@ function onAnswerSelected(answer){
 }
 
 function App() {
-    return <AuthorQuiz {...state} 
+    return  <ReactRedux.Provider store={store}> 
+        <AuthorQuiz {...state} 
         onAnswerSelected={onAnswerSelected} 
         onContinue={() => {
             state = resetState();
             render();
-        }}/>;
+        }}/>
+        </ReactRedux.Provider>;
 }
 
 const AuthorWrapper = withRouter(({history}) =>
