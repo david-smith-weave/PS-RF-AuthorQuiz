@@ -70,13 +70,6 @@ function getTurnData(authors){
     }
 }
 
-function resetState() {
-    return {
-        turnData: getTurnData(authors),
-        highlight: ''
-    };
-}
-
 function reducer(
     state = {authors, turnData: getTurnData(authors), highlight: ''}, 
     action){
