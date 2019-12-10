@@ -93,6 +93,7 @@ function reducer(
                    highlight: '',
                    turnData: getTurnData(state.authors) 
                 });
+            default: return state;
         }
     return state;
 }
