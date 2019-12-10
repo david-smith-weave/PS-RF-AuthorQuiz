@@ -99,7 +99,7 @@ let store = Redux.createStore(reducer);
 
 function App() {
     return  <ReactRedux.Provider store={store}> 
-        <AuthorQuiz />
+            <AuthorQuiz />
         </ReactRedux.Provider>;
 }
 
