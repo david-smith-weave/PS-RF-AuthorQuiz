@@ -58,4 +58,10 @@ function AddAuthorForm({match, onAddAuthor}){
     </div>;
 }
 
-export default AddAuthorForm;
+function mapDispatchToProps(dispatch){
+    return {
+        
+    };
+}
+
+export default connect(() => {}, mapDispatchToProps)(AddAuthorForm);
