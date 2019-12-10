@@ -60,7 +60,9 @@ function AddAuthorForm({match, onAddAuthor}){
 
 function mapDispatchToProps(dispatch){
     return {
-        
+        onAddAuthor: (author) => {
+            dispatch({ type: 'ADD_AUTHOR', author });
+        }
     };
 }
 
