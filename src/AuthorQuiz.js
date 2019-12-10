@@ -94,7 +94,11 @@ function mapStateToProps(state){
 }
 
 function mapDispatchToProps(dispath){
-
+  return {
+    onAnswerSelected: (answer) => {
+      dispath({ type: 'ANSWER_SELECTED', answer})
+    }
+  };
 }
 
 const AuthorQuiz = connect(mapStateToProps, mapDispatchToProps)(function ({turnData, highlight, onAnswerSelected, onContinue}) {
