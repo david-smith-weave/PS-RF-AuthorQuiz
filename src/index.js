@@ -99,13 +99,6 @@ function reducer(
 }
 
 let store = Redux.createStore(reducer);
-let state = resetState();
-
-function onAnswerSelected(answer){
-    const isCorrect = state.turnData.author.books.some((book) => book === answer);
-    state.highlight = isCorrect ? 'correct' : 'wrong';
-    render();
-}
 
 function App() {
     return  <ReactRedux.Provider store={store}> 
