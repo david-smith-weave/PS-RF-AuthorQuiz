@@ -59,10 +59,11 @@ function AddAuthorForm({match, onAddAuthor}){
     </div>;
 }
 
-function mapDispatchToProps(dispatch){
+function mapDispatchToProps(dispatch, props){
     return {
         onAddAuthor: (author) => {
             dispatch({ type: 'ADD_AUTHOR', author });
+            props.history.push('/');
         }
     };
 }
