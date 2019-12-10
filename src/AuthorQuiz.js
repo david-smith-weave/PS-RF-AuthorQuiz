@@ -86,7 +86,7 @@ function Footer(){
   )
 }
 
-function AuthorQuiz({turnData, highlight, onAnswerSelected, onContinue}) {
+const AuthorQuiz = connect(mapStateToProps, mapDispatchToProps)(function ({turnData, highlight, onAnswerSelected, onContinue}) {
   return (
     <div className="container-fluid">
       <Hero />
@@ -98,6 +98,6 @@ function AuthorQuiz({turnData, highlight, onAnswerSelected, onContinue}) {
       <Footer />
     </div>
   );
-}
+});
 
 export default AuthorQuiz;
