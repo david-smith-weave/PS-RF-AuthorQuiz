@@ -96,7 +96,7 @@ function mapStateToProps(state){
 function mapDispatchToProps(dispath){
   return {
     onAnswerSelected: (answer) => {
-      dispath({ type: 'ANSWER_SELECTED', answer})
+      dispatch({ type: 'ANSWER_SELECTED', answer})
     },
     onContinue: () => {
       dispatch({ type: 'CONTINUE' })
