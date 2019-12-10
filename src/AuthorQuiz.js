@@ -87,11 +87,14 @@ function Footer(){
 }
 
 function mapStateToProps(state){
-
+  return {
+    turnData: state.turnData,
+    highlight: state.highlight
+  };
 }
 
 function mapDispatchToProps(state){
-  
+
 }
 
 const AuthorQuiz = connect(mapStateToProps, mapDispatchToProps)(function ({turnData, highlight, onAnswerSelected, onContinue}) {
