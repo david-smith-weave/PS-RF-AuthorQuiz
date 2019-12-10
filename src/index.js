@@ -77,7 +77,7 @@ function resetState() {
     };
 }
 
-function reducer(state, action){
+function reducer(state = {authors, turnData: getTurnData(authors), highlight: ''}, action){
     return state;
 }
 
