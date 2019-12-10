@@ -92,12 +92,7 @@ function onAnswerSelected(answer){
 
 function App() {
     return  <ReactRedux.Provider store={store}> 
-        <AuthorQuiz {...state} 
-        onAnswerSelected={onAnswerSelected} 
-        onContinue={() => {
-            state = resetState();
-            render();
-        }}/>
+        <AuthorQuiz />
         </ReactRedux.Provider>;
 }
 
