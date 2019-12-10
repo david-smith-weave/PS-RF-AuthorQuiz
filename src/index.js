@@ -103,18 +103,11 @@ function App() {
         </ReactRedux.Provider>;
 }
 
-const AuthorWrapper = withRouter(({history}) =>
-    <AddAuthorForm onAddAuthor={(author) => {
-        authors.push(author);
-        history.push('/');
-    }} />
-);
-
 ReactDOM.render(
     <BrowserRouter>
         <React.Fragment>
             <Route exact path="/" component={App} />
-            <Route path="/add" component={AuthorWrapper} />
+            <Route path="/add" component={AddAuthorForm} />
         </React.Fragment>
     </BrowserRouter>, document.getElementById('root')
 );
