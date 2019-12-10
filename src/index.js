@@ -77,7 +77,11 @@ function resetState() {
     };
 }
 
-let state = resetState();
+function reducer(state, action){
+    return state;
+}
+
+let store = Redux.createStore(reducer);
 
 function onAnswerSelected(answer){
     const isCorrect = state.turnData.author.books.some((book) => book === answer);
