@@ -77,7 +77,18 @@ function resetState() {
     };
 }
 
-function reducer(state = {authors, turnData: getTurnData(authors), highlight: ''}, action){
+function reducer(
+    state = {authors, turnData: getTurnData(authors), highlight: ''}, 
+    action){
+        switch (action.type){
+            case 'ANSWER_SELECTED':
+                const isCorrect = state.turnData.author.books.some((book) => book === action.answer);
+                return Object.assign(
+                    {}, 
+                    state, { 
+                        highlight: isCorrect ? 'correct' : 'wrong'
+                    });    
+        }
     return state;
 }
 
